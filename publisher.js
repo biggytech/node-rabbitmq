@@ -10,6 +10,8 @@ async function run() {
   await channel.assertQueue(queueName);
 
   channel.sendToQueue(queueName, Buffer.from('Hello, World!'));
+
+  console.log('Sent a message');
 }
 
 run();

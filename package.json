@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "run:publisher": "node ./publisher.js",
-    "run:consumer": "node ./consumer.js"
+    "start:publisher": "node ./publisher.js",
+    "start:consumer": "node ./consumer.js"
   },
   "author": "",
   "license": "ISC",

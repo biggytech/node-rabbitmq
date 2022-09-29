@@ -11,6 +11,7 @@ async function run() {
 
   channel.consume(queueName, (message) => {
     console.log('Received message: ', message.content.toString());
+    console.log('Received at: ' + new Date(message.properties.timestamp * 1000).toLocaleString());
     channel.ack(message);
   });
 }
