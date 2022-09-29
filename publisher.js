@@ -12,6 +12,8 @@ async function run() {
   channel.sendToQueue(queueName, Buffer.from('Hello, World!'));
 
   console.log('Sent a message');
+
+  connection.close();
 }
 
 run();
